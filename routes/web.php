@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get("korisnik/profil", function()
+{
+    return "Ovo je moj korisnički profil";
+})->middleware("check.logged.user");
