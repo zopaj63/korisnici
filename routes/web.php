@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-//use App\Http\Controllers\KorisniciController;
+use App\Http\Controllers\KorisniciController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,4 +26,9 @@ Route::get("korisnik/profil", function()
 */
 
 // ruta za navigaciju na popis korisnika
-Route::get("/korisnici", "KorisniciController@index"); //KorisniciController je datoteka, nije klas (pa ne treba use)
+Route::get("/korisnici", "KorisniciController@index"); //KorisniciController je datoteka, nije class (pa ne treba use)
+
+// ruta za prikaz forme za unos novog korisnika (create)
+Route::get("korisnik", "KorisniciController@create");
+
+
