@@ -15,6 +15,8 @@ class CheckLoggedUser
      */
     public function handle(Request $request, Closure $next): Response
     {
+
+        /*
         //simuliramo autentifikaciju pa provjeravamo fiksnu varijablu, inače bi provjerili stanje usera!
         $isUserLogged=true; //korisnik je logiran:)
         if (!$isUserLogged)
@@ -23,5 +25,6 @@ class CheckLoggedUser
         }
         
         return $next($request);
+        */
     }
 }
